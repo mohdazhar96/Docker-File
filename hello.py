@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Welcome to new Web Application2 Chaitanya, Raj and Devender  !!</h1><br><h2> Have a Nice Day !</h2>'
+    return '<h1>Welcome to new Web Application3  !!</h1><br><h2> Have a Nice Day !</h2>'
 
 app.run(host='0.0.0.0', port=7077)
