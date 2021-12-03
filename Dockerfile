@@ -1,9 +1,7 @@
-from flask import Flask
+FROM python
 
-app = Flask(__name__)
+COPY  . .
 
-@app.route('/')
-def index():
-    return '<h1>Welcome to Web my new Application !!</h1><br><h2> Have a Nice Day !</h2>'
+RUN pip install flask
 
-app.run(host='0.0.0.0', port=7077)
+CMD [ "python", "./hello.py" ]
